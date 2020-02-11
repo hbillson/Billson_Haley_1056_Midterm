@@ -1,0 +1,5 @@
+Resources I used to help research code for this project: 
+https://www.w3schools.com/css/css3_animations.asp
+https://www.w3schools.com/howto/howto_css_transition_hover.asp
+https://iconmonstr.com/linkedin-4-png/
+https://www.youtube.com/watch?v=f1WMjDx4snI
