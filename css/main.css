@@ -188,6 +188,7 @@ body {
 
 #promo h2 {
 	text-align: center;
+	padding: 20px;
 	font-size: 60px;
 	font-weight: 900;
 	margin-bottom: 60px;
@@ -247,6 +248,7 @@ body {
 }
 
 .testimonial { 
+	color: #5f5e5e;
 	width: 30%;	
 	font-size: 20pt;
 	margin-top: 60px;
@@ -408,7 +410,7 @@ footer a:hover {
 #aboutContainer p {
 	font-weight: 600;
 	font-size: 24px;
-	color: #464545;
+	color: #5f5e5e;
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 35px;
@@ -483,8 +485,6 @@ footer a:hover {
 
 #productsContainer {
 	margin-top: 60px;
-	padding-right: -144px;
-	padding-left: -144px;
 	margin-right: -144px;
 	margin-left: -144px;
 	width: 100vw;
@@ -532,7 +532,7 @@ footer a:hover {
 	margin-bottom: -60px;
 }
 
-#productsDesc h2 {
+#productsDesc h3 {
 	color: #ed5292;
 	text-align: center;
 	font-size: 60px;
@@ -541,7 +541,7 @@ footer a:hover {
 }
 
 #productsDesc p {
-	color: #464545;
+	color: #5f5e5e;
 	text-align: center;
 	font-size: 18px;
 	font-weight: 400;
@@ -596,6 +596,7 @@ footer a:hover {
 
 #info p {
 	padding-bottom: 10px;
+	color: #5f5e5e;
 }
 
 #storeLocator {
@@ -628,6 +629,7 @@ footer a:hover {
 }
 
 #locatorForm input {
+	font-family: Raleway, sans-serif, Arial;
 	width: 200px;
 	text-align: center;
 	background-color: #fff;
@@ -648,6 +650,12 @@ footer a:hover {
 	font-weight: 500;
 	text-transform: uppercase;
 	border: 0;
+	/* change colour on hover, transition speed */
+	-moz-transition  : all 0.3s ease-in-out;
+	-webkit-transition  : all 0.3s ease-in-out;
+    -o-transition       : all 0.2s ease-in-out;
+    -ms-transition       : all 0.2s ease-in-out;
+	transition    : all 0.2s ease-in-out; 
 }
 
 #locatorForm input[type="submit"]:hover {
@@ -679,6 +687,10 @@ footer a:hover {
 	font-size: 60px;
 	color: #ed5292;
 	padding-bottom: 40px;
+}
+
+#contact p {
+	color: #5f5e5e;
 }
 
 #email {
@@ -754,7 +766,7 @@ input[type=submit]:hover {
 	width: 100px;
 	margin: 10px;
 	opacity: 1;
-		/* ease out on hover, transition speed */
+	/* ease out on hover, transition speed */
 	-moz-transition  : all 0.3s ease-in-out;
 	-webkit-transition  : all 0.3s ease-in-out;
     -o-transition       : all 0.2s ease-in-out;
