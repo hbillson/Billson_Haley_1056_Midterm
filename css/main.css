@@ -82,21 +82,30 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	width:100%;
-	height: 110px;
+	height: 100px;
 	background: #000;
 	font-weight: bold;
 }
 
 #mainNav a {
 	text-decoration: none;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 800;
+}
+
+#mainNav a:hover {
+	/* change colour out on hover, transition speed */
+	-moz-transition  : all 0.2s ease-in-out;
+	-webkit-transition  : all 0.2s ease-in-out;
+    -o-transition       : all 0.2s ease-in-out;
+    -ms-transition       : all 0.2s ease-in-out;
+	transition    : all 0.2s ease-in-out; 
 }
 
 .a1 {
 	text-decoration: none;
 	color: #e56139;
-	font-size: 24px;
+	font-size: 25px;
 	padding: 40px;
 }
 
@@ -104,7 +113,6 @@ body {
 	text-decoration: none;
 	color: #000;
 	background-color: #e56139;
-	transition: 0.2s;
 }
 
 .a2 {
@@ -118,7 +126,6 @@ body {
 	text-decoration: none;
 	color: #000;
 	background-color: #ed5292;
-	transition: 0.2s;
 }
 
 .a3 {
@@ -131,7 +138,6 @@ body {
 	text-decoration: none;
 	color: #000;
 	background-color: #8a5da2;
-	transition: 0.2s;
 }
 
 .a4 {
@@ -144,10 +150,19 @@ body {
 	text-decoration: none;
 	color: #000;
 	background-color: #d0e47f;
-	transition: 0.2s;
 }
 
 #logo img {
+	height: 80px;
+	/* bigger on hover, transition speed */
+	-moz-transition  : all 0.2s ease-in-out;
+	-webkit-transition  : all 0.2s ease-in-out;
+    -o-transition       : all 0.2s ease-in-out;
+    -ms-transition       : all 0.2s ease-in-out;
+	transition    : all 0.2s ease-in-out; 
+}
+
+#logo img:hover {
 	height: 90px;
 }
 
@@ -177,19 +192,40 @@ body {
 	font-weight: 900;
 	margin-bottom: 60px;
 	color: #81cae8;
+	-moz-animation: changeColour 4s ease-in infinite;
+	-webkit-animation: changeColour 4s ease-in infinite;
+	-o-animation: changeColour 4s ease-in infinite;
+	-ms-animation: changeColour 4s ease-in infinite;
+	animation: changeColour 4s ease-in infinite;
 }
 
-#promoImage {
+@-webkit-keyframes changeColour {
+	0% {color: #81cae8;}
+	20% {color: #8a5da2;}
+	40% {color: #ed5292;}
+	60% {color: #e56139;}
+	80% {color: #d0e47f;}
+	100% {color: #81cae8;}
+}
+
+@keyframes changeColour {
+	0% {color: #81cae8;}
+	20% {color: #8a5da2;}
+	40% {color: #ed5292;}
+	60% {color: #e56139;}
+	80% {color: #d0e47f;}
+	100% {color: #81cae8;}
+}
+
+#promoImage img {
 	width: 100vw;
+	object-fit: cover;
 	position: relative;
 	left: 50%;
 	right: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
-	height: 360px;
-	background: #000;
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Mountains_from_westlands.jpg/2000px-Mountains_from_westlands.jpg"); 
-
+	height: 386px;
 }
 
 #testimonialsWrapper {
@@ -253,13 +289,25 @@ body {
 	letter-spacing: 1.2px;
 	color: #fff;
 	border: none;
+	opacity: 1;
+	/* gradient */
+	background: -moz-linear-gradient(rgba(184,224,125,1) 0%, rgba(205,229,165,1) 49%, rgba(182,224,127,1) 51%, rgba(214,224,161,1) 100%);
+	background: -webkit-linear-gradient(rgba(184,224,125,1) 0%, rgba(205,229,165,1) 49%, rgba(182,224,127,1) 51%, rgba(214,224,161,1) 100%);
+	background: -o-linear-gradient(rgba(184,224,125,1) 0%, rgba(205,229,165,1) 49%, rgba(182,224,127,1) 51%, rgba(214,224,161,1) 100%);
+	background: -ms-linear-gradient(rgba(184,224,125,1) 0%, rgba(205,229,165,1) 49%, rgba(182,224,127,1) 51%, rgba(214,224,161,1) 100%);
+	background: linear-gradient(rgba(184,224,125,1) 0%, rgba(205,229,165,1) 49%, rgba(182,224,127,1) 51%, rgba(214,224,161,1) 100%)	;;;; 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8e07d', endColorstr='#d6e0a1',GradientType=0 ); /* IE6-9 */
+	/* ease out on hover, transition speed */
+	-moz-transition  : all 0.3s ease-in-out;
+	-webkit-transition  : all 0.3s ease-in-out;
+    -o-transition       : all 0.2s ease-in-out;
+    -ms-transition       : all 0.2s ease-in-out;
+	transition    : all 0.2s ease-in-out; 
 }
 
 #testimonialButton button:hover {
-	background-color: #000
-	color: #666;
-	border: none;
 	cursor: pointer;
+	opacity: 0.6;
 }
 
 #mainFooter {
@@ -295,7 +343,12 @@ footer a {
 }
 
 footer a:hover {
-	color: #1276c0;
+	color: #fff;
+	-moz-animation: changeColour 1s ease-in infinite;
+	-webkit-animation: changeColour 1s ease-in infinite;
+	-o-animation: changeColour 1s ease-in infinite;
+	-ms-animation: changeColour 1s ease-in infinite;
+	animation: changeColour 1s ease-in infinite;
 }
 
 .columnsWrapper {
@@ -405,12 +458,24 @@ footer a:hover {
 	background-color: #d6e0a1;
 	color: white;
 	border: 0;
-	opacity: 0.6;
-	transition: 0.3s;
+	opacity: 1;
+	/* gradient */
+	background: -moz-linear-gradient(rgba(184,224,125,1) 0%, rgba(205,229,165,1) 49%, rgba(182,224,127,1) 51%, rgba(214,224,161,1) 100%);
+	background: -webkit-linear-gradient(rgba(184,224,125,1) 0%, rgba(205,229,165,1) 49%, rgba(182,224,127,1) 51%, rgba(214,224,161,1) 100%);
+	background: -o-linear-gradient(rgba(184,224,125,1) 0%, rgba(205,229,165,1) 49%, rgba(182,224,127,1) 51%, rgba(214,224,161,1) 100%);
+	background: -ms-linear-gradient(rgba(184,224,125,1) 0%, rgba(205,229,165,1) 49%, rgba(182,224,127,1) 51%, rgba(214,224,161,1) 100%);
+	background: linear-gradient(rgba(184,224,125,1) 0%, rgba(205,229,165,1) 49%, rgba(182,224,127,1) 51%, rgba(214,224,161,1) 100%)	;;;; 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8e07d', endColorstr='#d6e0a1',GradientType=0 ); /* IE6-9 */
+	/* ease out on hover, transition speed */
+	-moz-transition  : all 0.3s ease-in-out;
+	-webkit-transition  : all 0.3s ease-in-out;
+    -o-transition       : all 0.2s ease-in-out;
+    -ms-transition       : all 0.2s ease-in-out;
+	transition    : all 0.2s ease-in-out; 
 }
 
 #newsButton button:hover { 
-	opacity: 1;
+	opacity: 0.6;
 	cursor: pointer;
 }
 
@@ -436,16 +501,35 @@ footer a:hover {
 	right: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
-	height: 700px;
+	height: 800px;
 	display: inline-flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
+.arrow {
+	font-size: 200px;
+	color: #d0e47f;
+	font-weight: 900;
+	padding-left: 40px;
+	padding-right: 60px;
+	cursor: pointer;
+	-moz-transition  : all 0.3s ease-in-out;
+	-webkit-transition  : all 0.3s ease-in-out;
+    -o-transition       : all 0.2s ease-in-out;
+    -ms-transition       : all 0.2s ease-in-out;
+	transition    : all 0.2s ease-in-out; 
+}
+
+.arrow:hover {
+	opacity: 0.8;
+}
+
+
 #productsDesc {
-	background-color: #d6e0a1;
-	padding: 60px;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	background-color: #d0e47f;
+	padding: 100px;
+	margin-bottom: -60px;
 }
 
 #productsDesc h2 {
@@ -453,6 +537,7 @@ footer a:hover {
 	text-align: center;
 	font-size: 60px;
 	font-weight: 900;
+	padding-bottom: 10px;
 }
 
 #productsDesc p {
@@ -461,16 +546,16 @@ footer a:hover {
 	font-size: 18px;
 	font-weight: 400;
 	padding-top: 20px;
-	padding-left: 450px;
-	padding-right: 450px;
+	padding-left: 500px;
+	padding-right: 500px;
 	line-height: 1.2;
 }
 
 #productsDivider {
 	width: 340px;
 	margin: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-bottom: 25px;
 	border-bottom: 5px solid #ed5292;
 }
 
@@ -478,12 +563,17 @@ footer a:hover {
 
 #locations {
 	margin-top: 60px;
-	width: calc(100vw - 288px);
-	padding: ;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	margin-bottom: -60px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -493,7 +583,7 @@ footer a:hover {
 
 #info {
 	text-align: right;
-	width: 40%;
+	width: 20%;
 }
 
 #info h4 {
@@ -510,8 +600,10 @@ footer a:hover {
 
 #storeLocator {
 	width: 100%;
-	background-color: #d6e0a1;
+	background-color: #d0e47f;
 	height: auto;
+	margin-top: 10px;
+	padding-bottom: 20px;
 }
 
 #storeLocator h3 {
@@ -526,40 +618,54 @@ footer a:hover {
 #locatorBox {
 	background-color: #ed5292;
 	width: 400px;
-	height: 200px;
+	height: auto;
 	margin: auto;
 	margin-bottom: 40px;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	align-items: center;
-	flex-wrap: wrap;
+	padding-top: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
+	text-align: left;
 }
 
-.entry {
-	background-color: #eee;
-	height: 20px;
-	padding: 5px;
-	width: 100%;
+#locatorForm input {
+	width: 200px;
+	text-align: center;
+	background-color: #fff;
+	padding: 10px;
 }
 
-.submit {
+#locatorForm input[type="submit"] {
 	background-color: #81cae8;
-	height: 20px;
+	height: auto;
 	padding: 8px;
+	width: 35%;
+	float: right;
+	opacity: 1;
+	text-align: center;
 	color: white;
-	margin: auto;
-	font-weight: bold;
-	}
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 500;
+	text-transform: uppercase;
+	border: 0;
+}
+
+#locatorForm input[type="submit"]:hover {
+	background-color: #1276c0;
+}
 
 
 /* CONTACT PAGE */
 
 #contact {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
 	margin-top: 60px;
-	width: calc(100vw - 288px);
+	margin-left: -50vw;
+	margin-right: -50vw;
+	margin-bottom: -60px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -576,12 +682,13 @@ footer a:hover {
 }
 
 #email {
-	padding-left: 40px;
+	padding-left: 144px;
 	width: 60%;
 }
 
 #right {
 	width: 20%;
+	padding-right: 144px;
 }
 
 #call {
@@ -599,35 +706,42 @@ footer a:hover {
 
 #socialMedia {
 	width: 100%;
-	background-color: #d6e0a1;
+	background-color: #d0e47f;
 	height: auto;
 	padding: 60px;
 	text-align: center;
 	margin-top: 40px;
 }
 
-input, textarea { 
-	width: 400px; 
-	padding-left: 40px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+#contactForm {
+	width: 444px;
+}
+#contactForm input, textarea { 
+	width: 420px; 
+	padding-left: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	font-family: Raleway, sans-serif, Arial; 
 	font-size: 16px;
 }
 
-input[type=submit] { 
-	width: 444px; 
-	padding-left: 0;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-family: Raleway, sans-serif, Arial; 
-	font-size: 16px;
-	background-color:#d6e0a1 ;
-	border: 0;
+#contactForm input[type="submit"] { 
+	background-color: #d6e0a1;
+	height: auto;
+	padding: 10px;
+	width: 100%;
+	opacity: 1;
 	text-align: center;
 	color: white;
-	opacity: 0.6;
-    transition: 0.3s;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 500;
+	text-transform: uppercase;
+	border: 0;
+}
+
+#contactForm input[type="submit"]:hover {
+	background-color: #d0e47f;
 }
 
 
@@ -639,10 +753,16 @@ input[type=submit]:hover {
 .icon {
 	width: 100px;
 	margin: 10px;
-	opacity: 0.6;
-	transition: 0.3s;
+	opacity: 1;
+		/* ease out on hover, transition speed */
+	-moz-transition  : all 0.3s ease-in-out;
+	-webkit-transition  : all 0.3s ease-in-out;
+    -o-transition       : all 0.2s ease-in-out;
+    -ms-transition       : all 0.2s ease-in-out;
+	transition    : all 0.2s ease-in-out; 
 }
 
 .icon:hover {
-	opacity: 1;
+	opacity: 0.6;
+	cursor: pointer;
 }

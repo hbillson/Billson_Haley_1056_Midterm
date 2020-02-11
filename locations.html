@@ -17,7 +17,7 @@
 				<h3 class="hidden">Main Navigation</h3>
 				<a class="a1" href="about.html">About Us</a>
 				<a class="a2" href="products.html">Products</a>
-				<span id="logo"><img src="images/logo.png" alt="coors logo"></span>
+				<span id="logo"><a href="index.html"><img src="images/logo.png" alt="coors logo"></a></span>
 				<a class="a3" href="locations.html">Locations</a>
 				<a class="a4" href="contact.html">Contact</a>
 			</nav>
@@ -40,9 +40,14 @@
 				<div id="storeLocator">
 					<h3>Find the Seller Closest to You</h3>
 					<div id="locatorBox">
-						<span class="entry">Enter Postal Code</span>
-						<span class="entry">50 km</span>
-						<span class="submit">SUBMIT</span>
+					<form id="locatorForm" autocomplete="off" action="action_page.php" method="post">
+                    <input type="text" placeholder="Postal Code" required>
+                    <br><br>
+                    <p style="color:white;font-weight:600;text-align:center;width:50%">Distance (0-50km)</p>
+                    <input type="submit" value="Submit">
+                    <input type="range" placeholder="50km" required>
+                    <br><br>
+               		</form> 
 					</div>
 				</div>
 			</div>
