@@ -1,0 +1,88 @@
+
+-- BOTH PAGES -- 
+
+CONTAINER MARGINS OR PADDING
+   - 144px
+
+FONT FACE: Raleway 
+
+NAVIGATION BOX
+   - height: 110px
+
+FOOTER BOX
+   - width: 100%
+   - height: 263px
+
+COPYRIGHT BOX
+   - width: 100%
+   - height: 93px
+
+FOOTER NAV COLUMN 
+   - width: auto
+
+-- INDEX -- 
+
+FONT FACE NOTES
+   - slogan/h2: black 108px
+   - h3 (testimonials title/about page headings): bold italic 60px
+   - navigation: 40pt bold
+   - brand name: 48pt medium
+   - testimonials first line: 32pt bold italic letterspacing 1.2pt line height 66px 
+   - testimonials: 24px medium letterspacing indent 37px
+   - name under testimonials: line height 56px italic
+   - "more testimonials": 12pt medium italic letterspacing 1.2pt centered
+   - (footer) h5: 18pt bold
+   - (footer) li: 18pt italic, left padding 30px
+   - copyright: 11pt regular line height 1.2
+
+HEADER IMAGE
+   - width: 100%
+   - height: 417px
+
+LOGO 
+   - 288 by 288
+
+PROMO IMAGE
+   - width: 100%
+   - height: 360px
+
+"MORE" BUTTON
+   - height: 53 px
+   - width: 287px
+   - centered on page
+   - color: #666
+
+TESTIMONIALS
+   - width: 30%
+   - height: auto
+
+-- ABOUT PAGE -- 
+
+HEADER
+   - height: 249px
+   - width: 100%
+
+NAVIGATION BAR 
+   - height: 110px
+   - color: #a1a1a1
+
+LOGO
+   - 249px by 249px
+
+CONTENT (PICTURES)
+   - height: 386px
+   - width: 100%
+
+CONTENT (HEADINGS) 
+   - bold italic 60px
+
+CONTENT (P) 
+   - semibold 24px
+   - width: 379px
+
+BUTTON 
+   - height: 81px
+   - width: 665px
+   - bold 28px
+   - background colour: #a1a1a1
+

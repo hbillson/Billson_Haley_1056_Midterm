@@ -1,0 +1,13 @@
+yellow: #f9f208
+orange: #e56139
+   light orange: #fcb8a4
+pink: #ed5292
+   light pink: #ef91c1
+purple: #8a5da2
+   light purple: #a988b8
+dark blue: #1276c0
+   light blue: #81cae8
+lime: #d0e47f
+   light lime: #d6e0a1
+
+
